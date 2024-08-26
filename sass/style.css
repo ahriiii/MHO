@@ -1,9 +1,3 @@
-.wrapper {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .btn {
   min-width: 100px;
   color: white;
@@ -21,6 +15,7 @@
 
 img {
   border-radius: 5px;
+  background-size: cover;
   background-position: center;
 }
 
@@ -49,7 +44,10 @@ img {
   #services .banner {
     text-align: center;
     width: 100%;
-    height: 17%;
+    height: 30%;
+  }
+  #services .card {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -63,6 +61,12 @@ img {
 }
 @media (max-width: 700px) {
   #services .banner {
-    height: 23%;
+    height: 40%;
   }
+}
+
+.projects .carousel-inner > .carousel-item {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=style.css.map */
