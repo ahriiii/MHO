@@ -9,14 +9,47 @@ $primary-hex: rgb(167, 1, 6);
 $content-font: "Montserrat", sans-serif;
 
 .btn {
-  min-width: 100px;
-  color: white;
-  border: none;
-  transition: all 0.3s ease;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 12px 15px;
+  width: 130px;
+  height: 40px;
+}
+
+.btn-primary {
+  background-color: #ec2127 !important;
+  border: 1px solid #ec2127 !important;
 
   &:hover {
     transition: all 0.3s ease;
     transform: scale(1.05);
+    background: transparent !important;
+    color: #ec2127 !important;
+  }
+}
+
+.dark-title {
+  color: $secondary-hex;
+}
+
+.red-title {
+  color: $primary-hex;
+  font-weight: bold;
+}
+
+.p {
+  color: $secondary-dark-hex;
+}
+
+.btn-outline-primary {
+  color: #ec2127 !important;
+  border: 1px solid #ec2127 !important;
+
+  &:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    background: #ec2127 !important;
+    color: white !important;
   }
 }
 
@@ -38,6 +71,12 @@ img {
     url("/images/image1.jpg");
   background-size: cover;
   background-position: center;
+
+  h1,
+  p {
+    text-shadow: 1px 1px 15px #000;
+    padding-bottom: 1rem;
+  }
 }
 
 #services {
@@ -64,6 +103,13 @@ img {
     position: absolute;
     top: -50px;
   }
+
+  .content-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
   @media (max-width: 992px) {
     .banner {
       text-align: center;
@@ -139,7 +185,7 @@ img {
 
   .map {
     // border-right: 2px solid $primary-hex;
-
+    padding: 30px 0;
     .mapouter {
       position: relative;
       text-align: right;
