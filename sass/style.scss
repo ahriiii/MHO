@@ -1,8 +1,12 @@
-$primary-hex: #a70106;
-$primary-lightest-hex: #ec2127;
-$secondary-dark-hex: #697174;
-$secondary-hex: #858d90;
-$secondary-light-hex: #e6e4e4;
+$gray-darkest-hex: #191919;
+$gray-darker-hex: #313131;
+$gray-dark-hex: #697174;
+$gray-hex: #858d90;
+$gray-light-hex: #e6e4e4;
+$gray-lightest-hex: #f6f6f6;
+$primary-darkest-hex: #760104;
+$primary-hex: rgb(167, 1, 6);
+$content-font: "Montserrat", sans-serif;
 
 .btn {
   font-size: 16px;
@@ -142,13 +146,7 @@ img {
   }
 }
 
-.projects {
-  .carousel-inner > .carousel-item {
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-  }
-}
+
 
 #email {
   .form-floating {
@@ -211,4 +209,52 @@ img {
       border-right: none;
     }
   }
+
+
+  .footer-box1 {
+    width: 45%;
+    padding: 10px;
+  }
+  .footer-box1 h3 {
+    font-size: 32px;
+    color: #697174;
+    font-weight: 500;
+  }
+  .footer-box1 h2 {
+    font-size: 48px;
+    color: rgb(167, 1, 6);
+    font-weight: bold;
+  }
+  .footer-box1 p {
+    font-size: 1em;
+    line-height: 1.5;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+  }
+  .footer-box1 h1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .footer-box1 .button-area {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+  }
+  .footer-box1 .button-area button {
+    font-size: 18px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ec2127;
+    padding: 13px 25px;
+  }
+  .footer-box1 .button-area span {
+    color: #858d90;
+    margin-left: 30px;
+    display: none;
+  
+}
 }

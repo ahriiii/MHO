@@ -112,12 +112,6 @@ img {
   }
 }
 
-.projects .carousel-inner > .carousel-item {
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-}
-
 #email .form-floating {
   position: relative;
 }
@@ -167,4 +161,49 @@ img {
   .footer .map {
     border-right: none;
   }
+}
+.footer .footer-box1 {
+  width: 45%;
+  padding: 10px;
+}
+.footer .footer-box1 h3 {
+  font-size: 32px;
+  color: #697174;
+  font-weight: 500;
+}
+.footer .footer-box1 h2 {
+  font-size: 48px;
+  color: rgb(167, 1, 6);
+  font-weight: bold;
+}
+.footer .footer-box1 p {
+  font-size: 1em;
+  line-height: 1.5;
+  display: block;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+.footer .footer-box1 h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer .footer-box1 .button-area {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.footer .footer-box1 .button-area button {
+  font-size: 18px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #ec2127;
+  padding: 13px 25px;
+}
+.footer .footer-box1 .button-area span {
+  color: #858d90;
+  margin-left: 30px;
+  display: none;
 }/*# sourceMappingURL=style.css.map */
