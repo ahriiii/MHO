@@ -6,6 +6,9 @@ $gray-light-hex: #e6e4e4;
 $gray-lightest-hex: #f6f6f6;
 $primary-darkest-hex: #760104;
 $primary-hex: rgb(167, 1, 6);
+$secondary-dark-hex: #697174;
+$secondary-hex: #858d90;
+$secondary-light-hex: #e6e4e4;
 $content-font: "Montserrat", sans-serif;
 
 .btn {
@@ -144,6 +147,65 @@ img {
       height: 45%;
     }
   }
+/* comment muna to need muna ayusin yung sa kapag lumiliit yung view hahahahhah
+  .card-wrap {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+      .card {
+        margin-left: 30px;
+        padding: 25px 50px;
+        transition: all 0.1s ease-in-out;
+        width: 250px;
+        height: 200px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .icon {
+          .fa {
+            font-size: 40px;
+            line-height: 50px;
+            color: $gray-darker-hex;
+          }
+        }
+
+        .card-title {
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+          text-transform: capitalize;
+          color: $primary-hex;
+          margin-top: 10px;
+          display: inline;
+        }
+
+        .card-title-dark {
+          font-size: 18px;
+          font-weight: 500;
+          color: $gray-hex;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .card:hover {
+      border: solid 3px $primary-hex;
+      transition: all 0.1s ease;
+      border-radius: 5px;
+
+      .icon {
+        .fa {
+          color: $primary-hex;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+*/
 }
 
 
@@ -214,7 +276,9 @@ img {
   .footer-box1 {
     width: 45%;
     padding: 10px;
+
   }
+ 
   .footer-box1 h3 {
     font-size: 32px;
     color: #697174;
@@ -237,24 +301,9 @@ img {
     font-size: 18px;
     font-weight: bold;
   }
-  .footer-box1 .button-area {
-    margin: 25px 0;
-    display: flex;
-    align-items: center;
-  }
-  .footer-box1 .button-area button {
-    font-size: 18px;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    background: #ec2127;
-    padding: 13px 25px;
-  }
-  .footer-box1 .button-area span {
-    color: #858d90;
-    margin-left: 30px;
-    display: none;
   
-}
+  
+  
+   
+  
 }
