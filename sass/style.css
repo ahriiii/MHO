@@ -1,18 +1,12 @@
 .btn {
   min-width: 100px;
   color: white;
-  background-color: #ec2127;
+  border: none;
   transition: all 0.3s ease;
 }
 .btn:hover {
   transition: all 0.3s ease;
   transform: scale(1.05);
-}
-
-.icon {
-  position: absolute;
-  top: 50%;
-  left: 1.25rem;
 }
 
 .text-justify {
@@ -85,7 +79,7 @@ img {
 #email .form-floating {
   position: relative;
 }
-#email .form-floating .icon {
+#email .form-floating .fa {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -97,7 +91,7 @@ img {
   left: 0.5rem;
   padding-left: 3.5rem;
 }
-#email .form-floating .icon-text-area {
+#email .form-floating .fa-text-area {
   position: absolute;
   top: 1.8rem;
   left: 1.25rem;
