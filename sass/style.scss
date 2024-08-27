@@ -5,7 +5,7 @@ $gray-hex: #858d90;
 $gray-light-hex: #e6e4e4;
 $gray-lightest-hex: #f6f6f6;
 $primary-darkest-hex: #760104;
-$primary-hex: rgb(167, 1, 6);
+$primary-hex: #a70106;
 $secondary-dark-hex: #697174;
 $secondary-hex: #858d90;
 $secondary-light-hex: #e6e4e4;
@@ -42,6 +42,12 @@ $content-font: "Montserrat", sans-serif;
 
 .p {
   color: $secondary-dark-hex;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .btn-outline-primary {
@@ -140,6 +146,12 @@ img {
     .banner {
       height: 40%;
     }
+
+    .content-title {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   @media (max-width: 576px) {
@@ -147,7 +159,7 @@ img {
       height: 45%;
     }
   }
-/* comment muna to need muna ayusin yung sa kapag lumiliit yung view hahahahhah
+  /* comment muna to need muna ayusin yung sa kapag lumiliit yung view hahahahhah
   .card-wrap {
     margin-top: 50px;
     display: flex;
@@ -208,7 +220,15 @@ img {
 */
 }
 
-
+.projects {
+  #myCarousel {
+    .carousel-inner > .carousel-item {
+      height: 480px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
 
 #email {
   .form-floating {
@@ -216,6 +236,7 @@ img {
 
     .fa {
       position: absolute;
+      color: $primary-hex;
       top: 50%;
       transform: translateY(-50%);
       left: 1.25rem;
@@ -232,6 +253,7 @@ img {
       position: absolute;
       top: 1.8rem;
       left: 1.25rem;
+      color: $primary-hex;
     }
   }
 }
@@ -265,45 +287,4 @@ img {
       height: 400px !important;
     }
   }
-
-  @media (max-width: 992px) {
-    .map {
-      border-right: none;
-    }
-  }
-
-
-  .footer-box1 {
-    width: 45%;
-    padding: 10px;
-
-  }
- 
-  .footer-box1 h3 {
-    font-size: 32px;
-    color: #697174;
-    font-weight: 500;
-  }
-  .footer-box1 h2 {
-    font-size: 48px;
-    color: rgb(167, 1, 6);
-    font-weight: bold;
-  }
-  .footer-box1 p {
-    font-size: 1em;
-    line-height: 1.5;
-    display: block;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-  }
-  .footer-box1 h1 {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  
-  
-   
-  
 }

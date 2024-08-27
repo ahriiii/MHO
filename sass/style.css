@@ -22,12 +22,18 @@
 }
 
 .red-title {
-  color: rgb(167, 1, 6);
+  color: #a70106;
   font-weight: bold;
 }
 
 .p {
   color: #697174;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .btn-outline-primary {
@@ -164,6 +170,11 @@ img {
   #services .banner {
     height: 40%;
   }
+  #services .content-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 @media (max-width: 576px) {
   #services .banner {
@@ -171,11 +182,18 @@ img {
   }
 }
 
+.projects #myCarousel .carousel-inner > .carousel-item {
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+}
+
 #email .form-floating {
   position: relative;
 }
 #email .form-floating .fa {
   position: absolute;
+  color: #a70106;
   top: 50%;
   transform: translateY(-50%);
   left: 1.25rem;
@@ -190,6 +208,7 @@ img {
   position: absolute;
   top: 1.8rem;
   left: 1.25rem;
+  color: #a70106;
 }
 
 .footer {
@@ -215,35 +234,4 @@ img {
 }
 .footer .map .gmap_iframe {
   height: 400px !important;
-}
-@media (max-width: 992px) {
-  .footer .map {
-    border-right: none;
-  }
-}
-.footer .footer-box1 {
-  width: 45%;
-  padding: 10px;
-}
-.footer .footer-box1 h3 {
-  font-size: 32px;
-  color: #697174;
-  font-weight: 500;
-}
-.footer .footer-box1 h2 {
-  font-size: 48px;
-  color: rgb(167, 1, 6);
-  font-weight: bold;
-}
-.footer .footer-box1 p {
-  font-size: 1em;
-  line-height: 1.5;
-  display: block;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  unicode-bidi: isolate;
-}
-.footer .footer-box1 h1 {
-  font-size: 18px;
-  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
