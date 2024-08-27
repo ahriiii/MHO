@@ -73,65 +73,69 @@ img {
   background-size: cover;
   background-position: center;
   position: relative;
-  /* comment muna to need muna ayusin yung sa kapag lumiliit yung view hahahahhah
+  /*
     .card-wrap {
-      margin-top: 50px;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
+  position: absolute;
+  bottom: 105px;
+  .card-group{
+    .card {
 
-        .card {
-          margin-left: 30px;
-          padding: 25px 50px;
-          transition: all 0.1s ease-in-out;
-          width: 250px;
-          height: 200px;
+      width: 230px;
+      height: 130px;
 
-          display: flex;
-          flex-direction: column;
-          align-items: center;
 
-          .icon {
-            .fa {
-              font-size: 40px;
-              line-height: 50px;
-              color: $gray-darker-hex;
-            }
-          }
-
-          .card-title {
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            text-transform: capitalize;
-            color: $primary-hex;
-            margin-top: 10px;
-            display: inline;
-          }
-
-          .card-title-dark {
-            font-size: 18px;
-            font-weight: 500;
-            color: $gray-hex;
-            text-transform: capitalize;
-          }
+        .fa {
+          font-size: 20px;
+          line-height: 10px;
+          color: $gray-darker-hex;
         }
+
+
+
+      .card-title {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: capitalize;
+        color: $primary-hex;
+        margin-top: 10px;
       }
 
-      .card:hover {
-        border: solid 3px $primary-hex;
-        transition: all 0.1s ease;
-        border-radius: 5px;
-
-        .icon {
-          .fa {
-            color: $primary-hex;
-            transition: all 0.3s ease;
-          }
-        }
+      .card-text {
+        font-size: 18px;
+        font-weight: 500;
+        color: $gray-hex;
+        text-transform: capitalize;
       }
     }
-  */
+  }
+
+  .carousel{
+    .fa {
+      font-size: 20px;
+      line-height: 10px;
+      color: $gray-darker-hex;
+    }
+
+
+
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    color: $primary-hex;
+    margin-top: 10px;
+  }
+
+  .card-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: $gray-hex;
+    text-transform: capitalize;
+  }
+  }
+        */
 }
 #services .banner {
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/servicesBG.jpg");
@@ -144,7 +148,7 @@ img {
 }
 #services .content-title {
   position: absolute;
-  top: 50%;
+  top: 25%;
   transform: translateY(-50%);
 }
 @media (max-width: 992px) {
@@ -180,6 +184,32 @@ img {
   #services .banner {
     height: 45%;
   }
+}
+@media (max-width: 1199.98px) {
+  #services .card-group {
+    display: none;
+  }
+  #services .carousel {
+    display: block;
+  }
+}
+@media (min-width: 991.98px) {
+  #services .card-group {
+    display: flex;
+  }
+  #services .carousel {
+    display: none;
+  }
+}
+
+.card:hover {
+  border: solid 3px #a70106;
+  transition: all 0.1s ease;
+  border-radius: 5px;
+}
+.card:hover .icon .fa {
+  color: #a70106;
+  transition: all 0.3s ease;
 }
 
 .projects #myCarousel .carousel-inner > .carousel-item {
