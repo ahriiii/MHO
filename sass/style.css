@@ -2,7 +2,7 @@
   font-size: 16px;
   border-radius: 5px;
   padding: 12px 15px;
-  width: 130px;
+  min-width: 130px;
   height: 40px;
 }
 
@@ -24,6 +24,7 @@
 .red-title {
   color: #a70106;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .p {
@@ -73,69 +74,7 @@ img {
   background-size: cover;
   background-position: center;
   position: relative;
-  /*
-    .card-wrap {
-  position: absolute;
-  bottom: 105px;
-  .card-group{
-    .card {
-
-      width: 230px;
-      height: 130px;
-
-
-        .fa {
-          font-size: 20px;
-          line-height: 10px;
-          color: $gray-darker-hex;
-        }
-
-
-
-      .card-title {
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center;
-        text-transform: capitalize;
-        color: $primary-hex;
-        margin-top: 10px;
-      }
-
-      .card-text {
-        font-size: 18px;
-        font-weight: 500;
-        color: $gray-hex;
-        text-transform: capitalize;
-      }
-    }
-  }
-
-  .carousel{
-    .fa {
-      font-size: 20px;
-      line-height: 10px;
-      color: $gray-darker-hex;
-    }
-
-
-
-  .card-title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: capitalize;
-    color: $primary-hex;
-    margin-top: 10px;
-  }
-
-  .card-text {
-    font-size: 18px;
-    font-weight: 500;
-    color: $gray-hex;
-    text-transform: capitalize;
-  }
-  }
-        */
+  height: 100vmin;
 }
 #services .banner {
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/servicesBG.jpg");
@@ -147,71 +86,85 @@ img {
   top: -50px;
 }
 #services .content-title {
-  position: absolute;
-  top: 25%;
-  transform: translateY(-50%);
+  margin-top: 100px;
 }
 @media (max-width: 992px) {
   #services .banner {
-    text-align: center;
-    width: 100%;
-    height: 30%;
-  }
-  #services .card {
     display: none;
+  }
+  #services .content-title {
+    margin-top: 20px;
   }
 }
 @media (max-width: 768px) {
-  #services .content-title {
-    top: 0;
-    transform: translateY(0);
-  }
-  #services .card {
-    display: none;
-  }
-}
-@media (max-width: 700px) {
-  #services .banner {
-    height: 40%;
-  }
-  #services .content-title {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-@media (max-width: 576px) {
-  #services .banner {
-    height: 45%;
-  }
-}
-@media (max-width: 1199.98px) {
-  #services .card-group {
-    display: none;
-  }
-  #services .carousel {
-    display: block;
-  }
-}
-@media (min-width: 991.98px) {
-  #services .card-group {
-    display: flex;
-  }
-  #services .carousel {
+  #services .collapse-row > * {
     display: none;
   }
 }
 
-.card:hover {
-  border: solid 3px #a70106;
-  transition: all 0.1s ease;
-  border-radius: 5px;
-}
-.card:hover .icon .fa {
-  color: #a70106;
-  transition: all 0.3s ease;
+/*
+  .card-wrap {
+position: absolute;
+bottom: 105px;
+.card-group{
+  .card {
+
+    width: 230px;
+    height: 130px;
+
+
+      .fa {
+        font-size: 20px;
+        line-height: 10px;
+        color: $gray-darker-hex;
+      }
+
+
+
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: capitalize;
+      color: $primary-hex;
+      margin-top: 10px;
+    }
+
+    .card-text {
+      font-size: 18px;
+      font-weight: 500;
+      color: $gray-hex;
+      text-transform: capitalize;
+    }
+  }
 }
 
+.carousel{
+  .fa {
+    font-size: 20px;
+    line-height: 10px;
+    color: $gray-darker-hex;
+  }
+
+
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  color: $primary-hex;
+  margin-top: 10px;
+}
+
+.card-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: $gray-hex;
+  text-transform: capitalize;
+}
+}
+      */
 .projects #myCarousel .carousel-inner > .carousel-item {
   height: 480px;
   background-size: cover;

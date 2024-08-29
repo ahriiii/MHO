@@ -15,7 +15,7 @@ $content-font: "Montserrat", sans-serif;
   font-size: 16px;
   border-radius: 5px;
   padding: 12px 15px;
-  width: 130px;
+  min-width: 130px;
   height: 40px;
 }
 
@@ -38,6 +38,7 @@ $content-font: "Montserrat", sans-serif;
 .red-title {
   color: $primary-hex;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .p {
@@ -97,6 +98,7 @@ img {
   background-size: cover;
   background-position: center;
   position: relative;
+  height: 100vmin;
 
   .banner {
     background: linear-gradient(
@@ -114,51 +116,25 @@ img {
   }
 
   .content-title {
-    position: absolute;
-    top: 25%;
-    transform: translateY(-50%);
+    margin-top: 100px;
   }
 
   @media (max-width: 992px) {
     .banner {
-      text-align: center;
-      width: 100%;
-      height: 30%;
-    }
-
-    .card {
       display: none;
+    }
+    .content-title {
+      margin-top: 20px;
     }
   }
 
   @media (max-width: 768px) {
-    .content-title {
-      top: 0;
-      transform: translateY(0);
-    }
-
-    .card {
+    .collapse-row > * {
       display: none;
     }
   }
+}
 
-  @media (max-width: 700px) {
-    .banner {
-      height: 40%;
-    }
-
-    .content-title {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-
-  @media (max-width: 576px) {
-    .banner {
-      height: 45%;
-    }
-  }
 /*
   .card-wrap {
 position: absolute;
@@ -222,44 +198,6 @@ bottom: 105px;
 }
 }
       */
-
-      @media (max-width: 1199.98px) {
-        .card-group {
-          display: none;
-        }
-        .carousel {
-          display: block;
-        }
-      }
-      @media (min-width: 991.98px) {
-        .card-group {
-          display: flex;
-        }
-        .carousel {
-          display: none;
-        }
-      }
-
-    }
-
-    
-  
-    .card:hover {
-      border: solid 3px $primary-hex;
-      transition: all 0.1s ease;
-      border-radius: 5px;
-
-      .icon {
-        .fa {
-          color: $primary-hex;
-          transition: all 0.3s ease;
-        }
-      }
-    }
-  
-
-
-
 .projects {
   #myCarousel {
     .carousel-inner > .carousel-item {
@@ -308,8 +246,8 @@ bottom: 105px;
   background-position: center;
 
   .map {
-    // border-right: 2px solid $primary-hex;
     padding: 30px 0;
+
     .mapouter {
       position: relative;
       text-align: right;
