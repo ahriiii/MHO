@@ -135,26 +135,10 @@ img {
   }
 }
 
-/*
-  .card-wrap {
-position: absolute;
-bottom: 105px;
-.card-group{
-  .card {
-        
-    width: 230px;
-    height: 130px;
-  
-    
-      .fa {
-        font-size: 20px;
-        line-height: 10px;
-        color: $gray-darker-hex;
-      }
-    
-    
 
-    .card-title {
+  .card-wrap {
+    .card-title,
+    .card-title1 {
       font-size: 24px;
       font-weight: bold;
       text-align: center;
@@ -163,41 +147,94 @@ bottom: 105px;
       margin-top: 10px;
     }
 
-    .card-text {
+    .card-text,
+    .card-text1 {
       font-size: 18px;
       font-weight: 500;
       color: $gray-hex;
       text-transform: capitalize;
     }
+
+      .card:hover {
+      border: solid 3px $primary-hex;
+      transition: all 0.1s ease;
+      border-radius: 5px;
+
+      .icon {
+        .fa {
+          color: $primary-hex;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+
+
+    .card1 {
+      border: 1px solid #ddd; /* Light border to make the box visible */
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      padding: 20px; /* Space inside the card */
+      background-color: #fff; /* White background for the card */
+      transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+  }
+  
+
+  
+  .card1:hover {
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+    box-shadow: 0 8px 16px $secondary-dark-hex; /* Enhanced shadow on hover */
+}
+
+@media (max-width: 1199.98px) {
+  .card {
+    display: none;
+  }
+  .carousel {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    display: flex;
+  }
+  .carousel {
+    display: none;
   }
 }
 
-.carousel{
-  .fa {
-    font-size: 20px;
-    line-height: 10px;
-    color: $gray-darker-hex;
-  }
-
-
-
-.card-title {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: capitalize;
-  color: $primary-hex;
-  margin-top: 10px;
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto; /* Adjust to only fit the icon */
+  height: auto; /* Adjust to only fit the icon */
+  color: transparent; /* Hide button text */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  cursor: pointer;
+  outline: none;
+  padding: 0; /* Remove padding */
 }
 
-.card-text {
-  font-size: 18px;
-  font-weight: 500;
-  color: $gray-hex;
-  text-transform: capitalize;
+/* Style the arrow icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: block;
+    width: 20px; /* Adjust icon size */
+    height: 20px; /* Adjust icon size */
+    background-size: 100%; /* Make icon fill its container */
+    background-color: transparent; /* Ensure no background color */
+    filter: invert(100%); /* Optional: to make the icon white */
 }
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(0, 0, 0, 0.7);
 }
-      */
+
+}
+
 .projects {
   #myCarousel {
     .carousel-inner > .carousel-item {
