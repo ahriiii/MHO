@@ -75,6 +75,7 @@ img {
   background-position: center;
   position: relative;
   height: 100vmin;
+  /* Style the arrow icons */
 }
 #services .banner {
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/servicesBG.jpg");
@@ -88,78 +89,52 @@ img {
 #services .content-title {
   margin-top: 100px;
 }
-@media (max-width: 992px) {
-  #services .banner {
-    display: none;
-  }
-  #services .content-title {
-    margin-top: 20px;
-  }
+#services .row > * .card,
+#services #cardCarousel > * .card {
+  width: 100%;
+  height: 200px;
+  border: none;
+  background: transparent;
 }
-@media (max-width: 768px) {
-  #services .collapse-row > * {
-    display: none;
-  }
+#services .row > * .card .card-body,
+#services #cardCarousel > * .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.card-wrap {
-  /* Style the arrow icons */
+#services .row > * .card .card-body .fa,
+#services #cardCarousel > * .card .card-body .fa {
+  color: #313131;
+  font-size: 40px;
+  margin-bottom: 15px;
 }
-.card-wrap .card-title,
-.card-wrap .card-title1 {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: capitalize;
+#services .row > * .card .card-body .card-title,
+#services #cardCarousel > * .card .card-body .card-title {
   color: #a70106;
-  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 0;
 }
-.card-wrap .card-text,
-.card-wrap .card-text1 {
-  font-size: 18px;
-  font-weight: 500;
+#services .row > * .card .card-body .card-text,
+#services #cardCarousel > * .card .card-body .card-text {
   color: #858d90;
-  text-transform: capitalize;
 }
-.card-wrap .card:hover {
+#services .row > *:hover,
+#services #cardCarousel > *:hover {
   border: solid 3px #a70106;
   transition: all 0.1s ease;
   border-radius: 5px;
 }
-.card-wrap .card:hover .icon .fa {
+#services .row > *:hover .card-body .fa,
+#services #cardCarousel > *:hover .card-body .fa {
   color: #a70106;
   transition: all 0.3s ease;
 }
-.card-wrap .card1 {
-  border: 1px solid #ddd; /* Light border to make the box visible */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  padding: 20px; /* Space inside the card */
-  background-color: #fff; /* White background for the card */
-  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+#services #cardCarousel {
+  display: none;
 }
-.card-wrap .card1:hover {
-  transform: translateY(-5px); /* Lift the card slightly on hover */
-  box-shadow: 0 8px 16px #697174; /* Enhanced shadow on hover */
-}
-@media (max-width: 1199.98px) {
-  .card-wrap .card {
-    display: none;
-  }
-  .card-wrap .carousel {
-    display: block;
-  }
-}
-@media (min-width: 992px) {
-  .card-wrap .card {
-    display: flex;
-  }
-  .card-wrap .carousel {
-    display: none;
-  }
-}
-.card-wrap .carousel-control-prev,
-.card-wrap .carousel-control-next {
+#services .carousel-control-prev,
+#services .carousel-control-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -172,8 +147,8 @@ img {
   outline: none;
   padding: 0; /* Remove padding */
 }
-.card-wrap .carousel-control-prev-icon,
-.card-wrap .carousel-control-next-icon {
+#services .carousel-control-prev-icon,
+#services .carousel-control-next-icon {
   display: block;
   width: 20px; /* Adjust icon size */
   height: 20px; /* Adjust icon size */
@@ -181,9 +156,28 @@ img {
   background-color: transparent; /* Ensure no background color */
   filter: invert(100%); /* Optional: to make the icon white */
 }
-.card-wrap .carousel-control-prev:hover,
-.card-wrap .carousel-control-next:hover {
+#services .carousel-control-prev:hover,
+#services .carousel-control-next:hover {
   background: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 992px) {
+  #services .banner {
+    display: none;
+  }
+  #services .content-title {
+    margin-top: 20px;
+  }
+  #services .collapse-row > * {
+    display: none;
+  }
+  #services #cardCarousel {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  #services .row > * .card {
+    border: solid 3px #a70106;
+  }
 }
 
 .projects #myCarousel .carousel-inner > .carousel-item {
