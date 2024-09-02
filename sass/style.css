@@ -167,20 +167,21 @@ img {
   #services .content-title {
     margin-top: 20px;
   }
+}
+@media (max-width: 768px) {
   #services .collapse-row > * {
     display: none;
   }
   #services #cardCarousel {
     display: block;
   }
-}
-@media (max-width: 768px) {
-  #services .row > * .card {
+  #services .carousel-inner > * .card {
     border: solid 3px #a70106;
   }
 }
 
 .projects #myCarousel .carousel-inner > .carousel-item {
+  width: 100%;
   height: 480px;
   background-size: cover;
   background-position: center;
