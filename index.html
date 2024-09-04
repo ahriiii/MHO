@@ -67,7 +67,7 @@
                     replacement, and
                     installation needs in Metro Manila and its neighboring provinces.</p>
                 <a href="tel:09124892864" class="btn btn-primary">Contact Us</a>
-                <a href="tel:09124892864" class="btn btn-outline-primary">Mail Us</a>
+                <a href="mailto:Naptalitolin@gmail.com" class="btn btn-outline-primary">Mail Us</a>
             </div>
         </div>
     </section>
@@ -567,7 +567,7 @@
                         <div class="fs-1 red-title">MALABANAN HEAD OFFICE</div>
                         <p class="fs-6 p">Submit the form below and we'll get back with you.</p>
                     </h2>
-                    <form action="submit" class="needs-validation" id="form" novalidate>
+                    <form onsubmit="sendMail(); reset(); return false" class="needs-validation" id="form" novalidate>
                         <div class="form-floating mb-3">
                             <i class="fa fa-solid fa-user"></i>
                             <input name="full-name" type="text" class="form-control" id="floatingName"
@@ -599,7 +599,7 @@
                             <div class="valid-feedback">Valid.</div>
                             <div class="invalid-feedback">Please fill out this field.</div>
                         </div>
-                        <a href="#" class="btn btn-primary">Send Message</a>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
                 <div class="col-lg-6">
@@ -662,12 +662,11 @@
                         <p class="fs-6 p">Metro Manila and its neighboring provinces.</p>
                         <div class="fs-5 dark-title">Social Media Outlets</div>
                         <div class="d-flex align-center gap-3">
-                            <a href="#"><img width="48" height="48" src="https://img.icons8.com/color/48/facebook.png"
+                            <a href="https://www.facebook.com/profile.php?id=100063692605316&mibextid=ZbWKwL"><img
+                                    width="48" height="48" src="https://img.icons8.com/color/48/facebook.png"
                                     alt="facebook" /></a>
-                            <a href="#"><img width="48" height="48" src="https://img.icons8.com/color/48/gmail--v1.png"
-                                    alt="gmail--v1" /></a>
-                            <a href="#"><img width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png"
-                                    alt="linkedin" /></a>
+                            <a href="mailto:Naptalitolin@gmail.com"><img width="48" height="48"
+                                    src="https://img.icons8.com/color/48/gmail--v1.png" alt="gmail--v1" /></a>
                         </div>
                     </div>
                 </div>
@@ -685,6 +684,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="javascript/app.js"></script>
 </body>
 

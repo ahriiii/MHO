@@ -18,3 +18,27 @@
             }, false)
         })
 })()
+
+// Form Handling
+
+// Email Handling
+
+var sendMail = function () {
+    (function () {
+        emailjs.init("2BVln4tRECisJ02fq");
+    })();
+    var params = {
+        name: document.querySelector("#floatingName").value,
+        email: document.querySelector("#floatingEmail").value,
+        phone: document.querySelector("#floatingPhone").value,
+        message: document.querySelector("#floatingTextArea").value
+    };
+
+    var serviceID = "service_ytygjvk";
+    var templateID = "template_b1er2ae";
+
+    emailjs.send(serviceID, templateID, params)
+        .then(res => {
+            swal("Message Sent", "Please wait for reply 😊", "success");
+        }).catch();
+}
