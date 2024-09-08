@@ -74,7 +74,7 @@ img {
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 100vmin;
+  height: 100vh;
   /* Style the arrow icons */
 }
 #services .banner {
@@ -160,25 +160,6 @@ img {
 #services .carousel-control-next:hover {
   background: rgba(0, 0, 0, 0.7);
 }
-@media (max-width: 992px) {
-  #services .banner {
-    display: none;
-  }
-  #services .content-title {
-    margin-top: 20px;
-  }
-}
-@media (max-width: 768px) {
-  #services .collapse-row > * {
-    display: none;
-  }
-  #services #cardCarousel {
-    display: block;
-  }
-  #services .carousel-inner > * .card {
-    border: solid 3px #a70106;
-  }
-}
 
 .projects #myCarousel .carousel-inner > .carousel-item {
   width: 100%;
@@ -233,4 +214,27 @@ img {
 }
 .footer .map .gmap_iframe {
   height: 400px !important;
+}
+
+@media (max-width: 992px) {
+  #services {
+    height: 200vh;
+  }
+  .banner {
+    display: none;
+  }
+  .content-title {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  #services {
+    height: 160vh;
+  }
+  .collapse-row > * {
+    display: none;
+  }
+  #cardCarousel {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

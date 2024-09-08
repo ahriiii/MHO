@@ -98,7 +98,7 @@ img {
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 100vmin;
+  height: 100vh;
 
   .banner {
     background: linear-gradient(
@@ -199,37 +199,6 @@ img {
   .carousel-control-next:hover {
     background: rgba(0, 0, 0, 0.7);
   }
-
-  @media (max-width: 992px) {
-    .banner {
-      display: none;
-    }
-    .content-title {
-      margin-top: 20px;
-    }
-    // .collapse-row > * {
-    //   display: none;
-    // }
-    // #cardCarousel {
-    //   display: block;
-    // }
-  }
-
-  @media (max-width: 768px) {
-    .collapse-row > * {
-      display: none;
-    }
-
-    #cardCarousel {
-      display: block;
-    }
-
-    .carousel-inner > * {
-      .card {
-        border: solid 3px $primary-hex;
-      }
-    }
-  }
 }
 
 .projects {
@@ -299,5 +268,32 @@ img {
     .gmap_iframe {
       height: 400px !important;
     }
+  }
+}
+
+@media (max-width: 992px) {
+  #services {
+    height: 200vh;
+  }
+
+  .banner {
+    display: none;
+  }
+  .content-title {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #services {
+    height: 160vh;
+  }
+
+  .collapse-row > * {
+    display: none;
+  }
+
+  #cardCarousel {
+    display: block;
   }
 }

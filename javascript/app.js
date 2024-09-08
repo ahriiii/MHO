@@ -42,3 +42,8 @@ var sendMail = function () {
             swal("Message Sent", "Please wait for reply 😊", "success");
         }).catch();
 }
+
+// AOS
+AOS.init({
+    duration: 1000
+});

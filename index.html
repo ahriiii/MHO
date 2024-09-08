@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="https://kit.fontawesome.com/eed182f95d.js" crossorigin="anonymous"></script>
 
@@ -57,7 +58,7 @@
     </nav>
 
     <!-- Hero -->
-    <section class="vh-100" id="hero">
+    <section class="vh-100" id="hero" data-aos="fade-up">
         <div class="container-lg h-100 d-flex flex-column align-items-center justify-content-center">
             <div class="text-center text-white">
                 <h1 class="display-2 fw-bold">YOUR LOCAL EXPERT PLUMBER IN METRO MANILA</h1>
@@ -74,12 +75,12 @@
 
     <!-- About -->
     <section id="about">
-        <div class="container-fluid my-5 pb-5">
+        <div class="container my-5 pb-5">
             <div class="row g-4 justify-content-center align-items-center">
-                <div class="col-md-12  col-lg-6 d-none d-md-block">
+                <div class="col-md-12  col-lg-6 d-none d-md-block" data-aos="fade-right">
                     <img src="../images/aboutUs.jpg" class="img-fluid" alt="noice">
                 </div>
-                <div class="col-md-12  col-lg-6 text-md-start">
+                <div class="col-md-12  col-lg-6 text-md-start" data-aos="fade-left">
                     <h2>
                         <div class="fs-3 dark-title">MALABANAN HEAD OFFICE FOR YOUR</div>
                         <div class="fs-1 red-title">PLUMBING NEEDS!</div>
@@ -115,8 +116,8 @@
 
     <!-- Services -->
     <section class="my-5" id="services">
-        <div class="container-fluid h-100">
-            <div class="banner-wrapper w-100 d-flex justify-content-center">
+        <div class="container h-100">
+            <div class="banner-wrapper w-100 d-flex justify-content-center" data-aos="fade-down">
                 <div class="banner rounded">
                     <div class="banner-body p-3 h-100 rounded"
                         style="background: linear-gradient(rgba(167, 1, 6, 0.9), rgba(167, 1, 6, 0.9));">
@@ -142,9 +143,9 @@
             </div>
             <!-- Card Group (Visible on larger screens) -->
             <div class="card-wrap w-100 d-flex flex-column align-items-center justify-content-center">
-                <div class="row collapse-row w-100 g-3 gy-3 mb-3 d-flex justify-content-between">
+                <div class="row w-100 g-3 gy-3 mb-3 d-flex justify-content-between">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up">
                             <div class="card-body text-center">
                                 <i class="fa fa-thin fa-house-circle-exclamation"></i>
                                 <h5 class="card-title fs-3">WATER HEATER</h5>
@@ -153,7 +154,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="200">
                             <div class="card-body text-center">
                                 <i class="fa fa-thin fa-house-flood-water"></i>
                                 <h5 class="card-title fs-3">YARD</h5>
@@ -162,7 +163,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="400">
                             <div class="card-body text-center">
                                 <i class="fa fa-thin fa-house-lock"></i>
                                 <h5 class="card-title  fs-3">WHOLE HOUSE</h5>
@@ -171,7 +172,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="600">
                             <div class="card-body text-center">
                                 <i class="fa fa-thin fa-droplet"></i>
                                 <h5 class="card-title  fs-3">HOT WATER</h5>
@@ -182,7 +183,7 @@
                 </div>
                 <div class="collapse-row row w-100 g-3 gy-3 mb-3 d-flex justify-content-between">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="600">
                             <div class="card-body text-center">
                                 <i class="fa fa-thin fa-soap"></i>
                                 <h5 class="card-title  fs-3">CLOGGED</h5>
@@ -191,7 +192,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-delay="400">
                             <div class="card-body text-center">
                                 <i class="fa fa-thin fa-toilet"></i>
                                 <h5 class="card-title  fs-3">TOILET</h5>
@@ -201,7 +202,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="card">
-                            <div class="card-body text-center">
+                            <div class="card-body text-center" data-aos="fade-up" data-aos-delay="200">
                                 <i class="fa fa-solid fa-faucet-drip"></i>
                                 <h5 class="card-title  fs-3">FAUCET</h5>
                                 <p class="card-text fs-4">PROBLEMS</p>
@@ -209,7 +210,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up">
                             <div class="card-body text-center">
                                 <i class="fa fa-thin fa-house-circle-exclamation"></i>
                                 <h5 class="card-title fs-3">SIPHONING</h5>
@@ -334,9 +335,9 @@
 
     <!-- Addiional -->
     <section class="additional">
-        <div class="container-fluid pb-5">
+        <div class="container pb-5">
             <div class="row g-4 justify-content-center align-items-center">
-                <div class="col-md-12  col-lg-6 text-md-start">
+                <div class="col-md-12  col-lg-6 text-md-start" data-aos="fade-right">
                     <h2>
                         <div class="fs-3 dark-title">METRO MANILA'S BEST</div>
                         <div class="fs-1 red-title">RESIDENTIAL & COMMERCIAL PLUMBER</div>
@@ -357,7 +358,7 @@
                     <a href="tel:09124892864" class="btn btn-primary">Contact Us</a>
                 </div>
 
-                <div class="col-md-12  col-lg-6 d-none d-md-block">
+                <div class="col-md-12  col-lg-6 d-none d-md-block" data-aos="fade-left">
                     <img src="../images/sDetailPic.jpg" class="img-fluid" alt="noice">
                 </div>
             </div>
@@ -366,23 +367,23 @@
 
     <!-- Contact Section -->
 
-    <section id="contact">
-        <div class="container-fluid pb-3" style="background: linear-gradient(
-            rgba(255, 255, 255, 0.5),
-            rgba(255, 255, 255, 0.5)
-          ),
-          yellow;">
+    <section id="contact" class="p-3" style="background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      yellow;">
+        <div class="container pb-3">
             <div class="col-12 text-center p-5">
                 <h2>
                     <div class="fs-1 red-title">PLUMBING PROCESS</div>
                     <div class=" fs-3 dark-title">DEFINED</div>
                 </h2>
             </div>
-            <div class="row g-4 justify-content-center align-items-center">
+            <div class="row g-4 justify-content-center align-items-center" data-aos="fade-right">
                 <div class="col-md-12  col-lg-6 d-none d-md-block">
                     <img src="../images/contactPic.jpg" class="img-fluid" alt="noice">
                 </div>
-                <div class="h-100 col-md-12 col-lg-6 text-md-start">
+                <div class="h-100 col-md-12 col-lg-6 text-md-start" data-aos="fade-left">
                     <h2>
                         <div class="fs-3 red-title">Contact Us</div>
                     </h2>
@@ -413,7 +414,7 @@
 
     <!-- Projects Carousel -->
     <section class="projects vh-100 mb-5">
-        <div class="container-fuid max-height d-flex  flex-column align-items-center">
+        <div class="container max-height d-flex  flex-column align-items-center">
             <div class="p-5">
                 <h2 class="col-12 text-center">
                     <div class="fs-1 red-title">RECENT PROJECTS</div>
@@ -559,9 +560,9 @@
     <!-- Form Section -->
 
     <section id="email">
-        <div class="container-fluid mb-5">
+        <div class="container mb-5">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right">
                     <h2 class="form-title">
                         <div class="fs-3 dark-title">CONTACT</div>
                         <div class="fs-1 red-title">MALABANAN HEAD OFFICE</div>
@@ -602,7 +603,7 @@
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left">
                     <div class="my-5">
                         <h2>
                             <div class="fs-3 dark-title">OFFICE</div>
@@ -629,7 +630,7 @@
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 py-5">
+                <div class="col-lg-6 py-5" data-aos="fade-up">
                     <h2>
                         <div class="fs-1 red-title">PROUDLY SERVING MOST OF
                             METRO MANILA</div>
@@ -647,7 +648,7 @@
                 </div>
                 <div class="col-lg-6 py-5"
                     style="background: linear-gradient(rgba(211,211, 211, 0.9), rgba(211,211, 211, 0.9));">
-                    <h2 class="text-start">
+                    <h2 class="text-start" data-aos="fade-up">
                         <div class="fs-3 dark-title">Ready to have your</div>
                         <div class="fs-1 red-title">Professional Plumber Come Out?</div>
                         <a href="tel:09124892864" class="btn btn-primary">Contact Us</a>
@@ -681,6 +682,10 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
